@@ -1,0 +1,15 @@
+ion-grid {
+  background-image: url("/assets/money.jpg");
+  background-size: cover;
+  height: 100%;
+
+  ion-col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  img {
+    width: 500px;
+  }
+}

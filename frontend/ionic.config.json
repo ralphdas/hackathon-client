@@ -1,0 +1,7 @@
+{
+  "name": "PaperFace",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

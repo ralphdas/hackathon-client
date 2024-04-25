@@ -1,0 +1,29 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Pay-per Face
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Pay-per Face</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-grid fixed="true">
+    <ion-row>
+      <ion-col size="12" size-sm="12">
+        <ion-button *ngIf="!base64String" (click)="takePicture()">Maak je Pay-per Face!</ion-button>
+        <ion-button *ngIf="base64String" (click)="print()">Print Pay-per Face!</ion-button>
+      </ion-col>
+      <ion-col size="12" size-sm="12">
+        <img [src]="base64String">
+
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>
