@@ -5,7 +5,7 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule);
 
   // Serve static files
-
+  app.enableCors();
   await app.listen(5001);
 }
 bootstrap();
