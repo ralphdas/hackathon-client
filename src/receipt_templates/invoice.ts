@@ -1,5 +1,13 @@
-export const generateInvoiceReceipt = (encodedBase64Image: string) => {
+export const generatePayPerFace = (
+  encodedBase64Image: any,
+  amount: number = 50,
+) => {
   return `
-        {image: ${encodedBase64Image}}
+      {border: line}
+      --------------------------------------
+      "^^${amount} EUR                                   "^^
+      ^^^ EUR              ^^^
+      {image: ${encodedBase64Image}}
+      "^^                                   ${amount} EUR"^^
     `;
 };
